@@ -1,37 +1,35 @@
-# Sayaç Uygulaması (Counter App) 🚀
+# 📱 Flutter Sayaç Uygulaması
 
-Flutter ile geliştirilmiş, temel state yönetimi (Durum Yönetimi) mantığını gösteren şık ve işlevsel bir sayaç uygulamasıdır.
-
-## Özellikler ✨
-
-* **Artırma (+):** Sayaç değerini birer birer artırır.
-* **Azaltma (-):** Sayaç değerini birer birer azaltır.
-* **Sıfırlama (↻):** Sayacı tek dokunuşla sıfıra döndürür.
-* **Dinamik Renklendirme:** * Değer **pozitif ( > 0 )** ise sayı **mavi** renkte görünür.
-  * Değer **sıfır veya negatif ( <= 0 )** ise sayı **kırmızı** renkte görünür.
-* **Modern Arayüz:** Yeşil AppBar ve dikey hizalanmış Floating Action Button (FAB) tasarımı.
-
-## Ekran Görüntüsü 📸
-
-
-<img width="1320" height="2868" alt="Simulator Screenshot - iPhone 17 Pro Max - 2026-02-04 at 17 56 37" src="https://github.com/user-attachments/assets/afb7d4bb-17f6-465f-b9b7-d88d45671f19" />
+Bu proje, Flutter ile geliştirilmiş basit ve öğretici bir **Sayaç (Counter) Uygulamasıdır**.  
+StatefulWidget ve `setState()` mantığını öğrenmek isteyenler için ideal bir örnektir.
 
 ---
 
-## English Description 🌍
+## 🚀 Özellikler
 
-A functional and clean Counter Application built with Flutter. This project demonstrates basic state management, dynamic UI updates, and custom layout design.
-
-### Key Features
-* **Increment/Decrement:** Modify the count value easily.
-* **Reset:** Reset the counter back to zero with one click.
-* **Conditional Styling:** The counter text color changes dynamically (Blue for positive, Red for zero or negative values).
-* **UI Design:** Features a green themed AppBar and an organized floating action button column.
+- ➕ Sayaç artırma
+- ➖ Sayaç azaltma
+- 🔄 Sayaç sıfırlama
+- 🎨 Sayaç değerine göre renk değişimi
+  - Pozitif değer → **Mavi**
+  - Sıfır / Negatif değer → **Kırmızı**
+- 📱 Material Design uyumlu arayüz
 
 ---
 
-## Kurulum ve Çalıştırma / Installation ⚙️
+## 🧠 Kullanılan Yapılar
 
-1. **Projeyi klonlayın:**
+- `StatelessWidget`
+- `StatefulWidget`
+- `setState()`
+- `Scaffold`, `AppBar`
+- `FloatingActionButton`
+- `Column`, `Text`, `Icon`
+
+---
+
+## 🛠️ Kurulum ve Çalıştırma
+
+1. Bu projeyi klonlayın:
    ```bash
-   git clone [https://github.com/kullanici-adiniz/proje-isminiz.git](https://github.com/kullanici-adiniz/proje-isminiz.git)
+   git clone https://github.com/kullanici-adi/flutter-sayac-uygulamasi.git
