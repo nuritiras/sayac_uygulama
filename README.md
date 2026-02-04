@@ -1,16 +1,37 @@
-# sayac_uygulama
+# Sayaç Uygulaması (Counter App) 🚀
 
-A new Flutter project.
+Flutter ile geliştirilmiş, temel state yönetimi (Durum Yönetimi) mantığını gösteren şık ve işlevsel bir sayaç uygulamasıdır.
 
-## Getting Started
+## Özellikler ✨
 
-This project is a starting point for a Flutter application.
+* **Artırma (+):** Sayaç değerini birer birer artırır.
+* **Azaltma (-):** Sayaç değerini birer birer azaltır.
+* **Sıfırlama (↻):** Sayacı tek dokunuşla sıfıra döndürür.
+* **Dinamik Renklendirme:** * Değer **pozitif ( > 0 )** ise sayı **mavi** renkte görünür.
+  * Değer **sıfır veya negatif ( <= 0 )** ise sayı **kırmızı** renkte görünür.
+* **Modern Arayüz:** Yeşil AppBar ve dikey hizalanmış Floating Action Button (FAB) tasarımı.
 
-A few resources to get you started if this is your first Flutter project:
+## Ekran Görüntüsü 📸
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="1320" height="2868" alt="Simulator Screenshot - iPhone 17 Pro Max - 2026-02-04 at 17 56 37" src="https://github.com/user-attachments/assets/afb7d4bb-17f6-465f-b9b7-d88d45671f19" />
+
+---
+
+## English Description 🌍
+
+A functional and clean Counter Application built with Flutter. This project demonstrates basic state management, dynamic UI updates, and custom layout design.
+
+### Key Features
+* **Increment/Decrement:** Modify the count value easily.
+* **Reset:** Reset the counter back to zero with one click.
+* **Conditional Styling:** The counter text color changes dynamically (Blue for positive, Red for zero or negative values).
+* **UI Design:** Features a green themed AppBar and an organized floating action button column.
+
+---
+
+## Kurulum ve Çalıştırma / Installation ⚙️
+
+1. **Projeyi klonlayın:**
+   ```bash
+   git clone [https://github.com/kullanici-adiniz/proje-isminiz.git](https://github.com/kullanici-adiniz/proje-isminiz.git)
