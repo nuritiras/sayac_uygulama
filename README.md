@@ -1,35 +1,37 @@
-# 📱 Flutter Sayaç Uygulaması
+# Sayaç Uygulaması (Counter App) 🚀
 
-Bu proje, Flutter ile geliştirilmiş basit ve öğretici bir **Sayaç (Counter) Uygulamasıdır**.  
-StatefulWidget ve `setState()` mantığını öğrenmek isteyenler için ideal bir örnektir.
+Flutter ile geliştirilmiş, temel state yönetimi (Durum Yönetimi) mantığını gösteren şık ve işlevsel bir sayaç uygulamasıdır.
 
----
+## Özellikler ✨
 
-## 🚀 Özellikler
+* **Artırma (+):** Sayaç değerini birer birer artırır.
+* **Azaltma (-):** Sayaç değerini birer birer azaltır.
+* **Sıfırlama (↻):** Sayacı tek dokunuşla sıfıra döndürür.
+* **Dinamik Renklendirme:** * Değer **pozitif ( > 0 )** ise sayı **mavi** renkte görünür.
+  * Değer **sıfır veya negatif ( <= 0 )** ise sayı **kırmızı** renkte görünür.
+* **Modern Arayüz:** Yeşil AppBar ve dikey hizalanmış Floating Action Button (FAB) tasarımı.
 
-- ➕ Sayaç artırma
-- ➖ Sayaç azaltma
-- 🔄 Sayaç sıfırlama
-- 🎨 Sayaç değerine göre renk değişimi
-  - Pozitif değer → **Mavi**
-  - Sıfır / Negatif değer → **Kırmızı**
-- 📱 Material Design uyumlu arayüz
+## Ekran Görüntüsü 📸
 
----
+<img width="570" height="1092" alt="Ekran Resmi 2026-02-04 18 04 54" src="https://github.com/user-attachments/assets/54d4451a-5ffb-4d7c-a3ac-8b75426ed122" />
 
-## 🧠 Kullanılan Yapılar
-
-- `StatelessWidget`
-- `StatefulWidget`
-- `setState()`
-- `Scaffold`, `AppBar`
-- `FloatingActionButton`
-- `Column`, `Text`, `Icon`
 
 ---
 
-## 🛠️ Kurulum ve Çalıştırma
+## English Description 🌍
 
-1. Bu projeyi klonlayın:
+A functional and clean Counter Application built with Flutter. This project demonstrates basic state management, dynamic UI updates, and custom layout design.
+
+### Key Features
+* **Increment/Decrement:** Modify the count value easily.
+* **Reset:** Reset the counter back to zero with one click.
+* **Conditional Styling:** The counter text color changes dynamically (Blue for positive, Red for zero or negative values).
+* **UI Design:** Features a green themed AppBar and an organized floating action button column.
+
+---
+
+## Kurulum ve Çalıştırma / Installation ⚙️
+
+1. **Projeyi klonlayın:**
    ```bash
-   git clone https://github.com/kullanici-adi/flutter-sayac-uygulamasi.git
+   git clone [https://github.com/kullanici-adiniz/proje-isminiz.git](https://github.com/kullanici-adiniz/proje-isminiz.git)
