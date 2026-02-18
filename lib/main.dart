@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sayac_uygulama/input_text.dart';
+import 'package:sayac_uygulama/home_page.dart';
 
 void main(List<String> args) {
   runApp(MyApp());
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const MyInput(),
+      home: const MyHomePage(),
     );
   }
 }
