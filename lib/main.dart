@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sayac_uygulama/input_text.dart';
 
 void main(List<String> args) {
   runApp(MyApp());
@@ -10,89 +11,34 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Sayaç Uygulaması',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  var _counter = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Sayaç Uygulaması'),
-        backgroundColor: Colors.green,
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('Sayaç Değeri:', style: TextStyle(fontSize: 20)),
-            Text(
-              _counter.toString(),
-              style: TextStyle(
-                fontSize: 40,
-                color: _counter > 0 ? Colors.blue: Colors.red,
-              ),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        textTheme: TextTheme(
+          headlineLarge: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+          bodyMedium: TextStyle(fontSize: 16),
+        ),
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.indigo,
+          foregroundColor: Colors.white,
+          centerTitle: true,
+        ),
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: Colors.green,
+          foregroundColor: Colors.white,
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.deepPurple,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
             ),
-          ],
+          ),
         ),
       ),
-      floatingActionButton: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          FloatingActionButton(
-            onPressed: () {
-              setState(() {
-                _sayacArttir();
-              });
-            },
-            tooltip: 'Increment',
-            child: Icon(Icons.add),
-          ),
-          SizedBox(height: 10),
-          FloatingActionButton(
-            onPressed: () {
-              setState(() {
-                _sayacAzalt();
-              });
-            },
-            tooltip: 'Decrement',
-            child: Icon(Icons.remove),
-          ),
-          SizedBox(height: 10),
-          FloatingActionButton(
-            onPressed: () {
-              setState(() {
-                _counter = 0;
-              });
-            },
-            tooltip: 'Reset',
-            child: Icon(Icons.refresh),
-          ),
-        ],
-      ),
+      home: const MyInput(),
     );
   }
-  
-  void _sayacArttir() {
-    _counter++;
-  }
-
-  void _sayacAzalt() {
-    _counter--;
-  }
-
 }
